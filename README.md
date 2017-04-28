@@ -1,5 +1,5 @@
 <p align="center"> <img src="http://uupload.ir/files/1lm_sohei_ds.png" width="512">
-<h1><p align="center">Logo Sticker
+<h1><p align="center">#Logo Sticker
 
 
 <h3 align="left"> <strong>install :</strong>
@@ -15,3 +15,7 @@
 <span>screen ./launch.sh </span>
 </pre>
 * * *
+#Thanks to
+[Mosters](https://t.me/api_monsters)
+
+#[PartTeam](https://t.me/PartTeam)

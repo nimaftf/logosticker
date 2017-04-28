@@ -15,6 +15,7 @@
 <span>autolaunch:</span>
 <span>screen ./launch.sh </span>
 </pre>
+دوستان دقت کنید که بات حتما ادمین چنلی کنید که ایدیش ست کردید:)
 * * *
 # Thanks to
 [Mosters](https://t.me/api_monsters)

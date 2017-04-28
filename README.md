@@ -1,5 +1,5 @@
 <p align="center"> <img src="http://uupload.ir/files/1lm_sohei_ds.png" width="512">
-<h1><p align="center">#Logo Sticker
+<h1><p align="center"># Logo Sticker
 
 
 <h3 align="left"> <strong>install :</strong>
@@ -11,11 +11,11 @@
 <span>chmod 7777 ./launch.sh</span>
 <span>./launch.sh install</span>
 <span>./launch.sh </span>
-<span>#############</span>
+<span>autolaunch:</span>
 <span>screen ./launch.sh </span>
 </pre>
 * * *
-#Thanks to
+# Thanks to
 [Mosters](https://t.me/api_monsters)
 
-#[PartTeam](https://t.me/PartTeam)
+# [PartTeam](https://t.me/PartTeam)

@@ -3,9 +3,7 @@
 import telebot
 from telebot import types
 from telebot import util
-import time
 import sys
-import json
 import os
 import requests
 import urllib
@@ -14,19 +12,16 @@ import redis
 import requests as req
 reload(sys)
 sys.setdefaultencoding("utf-8")
-
-TOKEN = '356303960:AAHPgqSoXrYKlTQft2RjBQMyzZCJz3Cayjc'
+TOKEN = 'Token'
 bot = telebot.TeleBot(TOKEN)
 redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 db = "https://api.telegram.org/bot{}/getMe?".format(TOKEN)
-
 f = "\n \033[01;30m Bot Firstname: {} \033[0m".format(bot.get_me().first_name)
 u = "\n \033[01;34m Bot Username: {} \033[0m".format(bot.get_me().username)
 i = "\n \033[01;32m Bot ID: {} \033[0m".format(bot.get_me().id)
 c = "\n \033[01;31m Bot Is Online Now! \033[0m"
 b = "\n \033[01;35m Channel: @PartTeam\033[0m"
 print(f + u + i + c + b)
-
 channel = '@PartTeam'
 @bot.message_handler(commands=['start'])
 def start(m):
@@ -86,8 +81,7 @@ def logosticker(m):
     rank = bot.get_chat_member(channel,m.from_user.id).status
     print rank
     if rank == "creator" or rank == "administrator" or rank == "member":
-        text = m.text
-        redis.hset("logosticker","{}".format(m.from_user.id),"{}".format(text))
+        redis.hset("logosticker","{}".format(m.from_user.id),"{}".format(m.text))
         markup = types.InlineKeyboardMarkup()
         c = types.InlineKeyboardButton("طرح ساده(انگلیسی)",callback_data='1')
         v = types.InlineKeyboardButton("طرح ساده(انگلیسی)",callback_data='2')
@@ -712,3 +706,4 @@ def callback(call):
        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = tex, reply_markup=markup, parse_mode='Markdown')
 
 bot.polling(True)
+#BY: @SoHeilDkta :)

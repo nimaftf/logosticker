@@ -35,5 +35,5 @@ if [ "$1" = "install" ]; then
 
 
    pro
-   python LogoStcker.py $@
+   python logostcker.py $@
 fi

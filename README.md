@@ -11,4 +11,7 @@
 <span>chmod 7777 ./launch.sh</span>
 <span>./launch.sh install</span>
 <span>./launch.sh </span>
+<span>#############</span>
+<span>screen ./launch.sh </span>
 </pre>
+* * *

@@ -20,7 +20,7 @@ sudo apt-get install python2.7
 sudo pip install pytelegrambotapi py==1.4.29 pytest==2.7.2 requests==2.7.0 six==1.9.0 wheel==0.24.0
 }
 
-function print_logo() {
+function pro() {
 	echo -e "\033[38;5;600m"
 	echo -e "LogoSticker :)"
 	echo -e "By: @SoHeilDkta"
@@ -34,6 +34,6 @@ if [ "$1" = "install" ]; then
  
 
 
-   print_logo
+   pro
    python LogoStcker.py $@
 fi

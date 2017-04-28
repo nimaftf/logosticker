@@ -13,6 +13,8 @@ import requests as req
 reload(sys)
 sys.setdefaultencoding("utf-8")
 TOKEN = 'Token'
+channel = '@PartTeam'
+sudo = 'Your ID'
 bot = telebot.TeleBot(TOKEN)
 redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 db = "https://api.telegram.org/bot{}/getMe?".format(TOKEN)
@@ -22,7 +24,6 @@ i = "\n \033[01;32m Bot ID: {} \033[0m".format(bot.get_me().id)
 c = "\n \033[01;31m Bot Is Online Now! \033[0m"
 b = "\n \033[01;35m Channel: @PartTeam\033[0m"
 print(f + u + i + c + b)
-channel = '@PartTeam'
 @bot.message_handler(commands=['start'])
 def start(m):
  try:
@@ -48,7 +49,7 @@ def start(m):
 	
 @bot.message_handler(commands=['bc'])
 def clac(m):
-    if m.from_user.id == 311231963 or m.from_user.id == 109035230 :
+    if str(m.from_user.id) == sudo :
         text = m.text.replace("/bc ","")
         rd = redis.smembers('members')
         for id in rd:
@@ -59,7 +60,7 @@ def clac(m):
 				
 @bot.message_handler(commands=['panel'])
 def panel(m):
-    if m.from_user.id == 311231963 or m.from_user.id == 109035230 :
+    if str(m.from_user.id) == sudo :
      markup = types.InlineKeyboardMarkup()
      c = types.InlineKeyboardButton("امار",callback_data='amar')
      markup.add(c)
@@ -67,7 +68,7 @@ def panel(m):
 	 
 @bot.message_handler(commands=['fwdall'])
 def fwdall(m):
-    if m.from_user.id == 311231963 or m.from_user.id == 109035230 :
+    if str(m.from_user.id) == sudo :
         if m.reply_to_message:
             mid = m.reply_to_message.message_id
             ids = redis.smembers('members')

@@ -34,7 +34,7 @@ def start(m):
     c = types.InlineKeyboardButton("درباره",callback_data='about')
     markup.add(c)
     redis.sadd('members',m.from_user.id)
-    bot.send_message(m.chat.id, "به ربات لوگو استیکر خوش امدید\nکار کردن با این بات خیلی راحته فقط کافیه متنت وارد کنی تا  لوگو مورد نظرت انتخاب کنی", disable_notification=True, reply_markup=markup, parse_mode='Markdown')
+    bot.send_message(m.chat.id, "به ربات لوگو استیکر خوش امدید\nکار کردن با این بات خیلی راحته فقط کافیه عضو کانال @dar_masir_harzegi شوید متنت وارد کنی تا  لوگو مورد نظرت انتخاب کنی", disable_notification=True, reply_markup=markup, parse_mode='Markdown')
   else:
     markup = types.InlineKeyboardMarkup()
     ch = types.InlineKeyboardButton('عضومیشوم',url='https://t.me/joinchat/AAAAAEHdKsQ8JZTUke0umw')
@@ -45,7 +45,7 @@ def start(m):
     c = types.InlineKeyboardButton("درباره",callback_data='about')
     markup.add(c)
     redis.sadd('members',m.from_user.id)
-    bot.send_message(m.chat.id, "به ربات لوگو استیکر خوش امدید\nکار کردن با این بات خیلی راحته فقط کافیه متنت وارد کنی تا  لوگو مورد نظرت انتخاب کنی", disable_notification=True, reply_markup=markup, parse_mode='Markdown')
+     bot.send_message(m.chat.id, "به ربات لوگو استیکر خوش امدید\nکار کردن با این بات خیلی راحته فقط کافیه عضو کانال @dar_masir_harzegi شویدمتنت وارد کنی تا  لوگو مورد نظرت انتخاب کنی", disable_notification=True, reply_markup=markup, parse_mode='Markdown')
 	
 @bot.message_handler(commands=['bc'])
 def clac(m):

@@ -707,4 +707,4 @@ def callback(call):
        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = tex, reply_markup=markup, parse_mode='Markdown')
 
 bot.polling(True)
-#BY: @SoHeilDkta :)
+#BY: @nimaftf :)

@@ -6,8 +6,8 @@
 </h3>
 
 <pre>
-<span>git clone https://github.com/SoHeil-R/LogoSticker.git</span>
-<span>cd LogoSticker</span>
+<span>git clone https://github.com/nimaftf/Logosticker.git</span>
+<span>cd Logosticker</span>
 <span>chmod 7777 ./launch.sh</span>
 <span>./launch.sh install</span>
 <span> go to logosticker.py and set token,userchannel,sudoid</span>
@@ -18,6 +18,6 @@
 دوستان دقت کنید که باتو حتما ادمین چنلی کنید که ایدیش ست کردید:)
 * * *
 # Thanks to
-[Mosters](https://t.me/api_monsters)
+[iranxfun](https://t.me/iranxfun)
 
-# [PartTeam](https://t.me/PartTeam)
+# [nimaftf](https://t.me/nimaftf)

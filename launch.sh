@@ -23,8 +23,8 @@ sudo pip install pytelegrambotapi py==1.4.29 pytest==2.7.2 requests==2.7.0 six==
 function print_logo() {
 	echo -e "\033[38;5;600m"
 	echo -e "LogoSticker :)"
-	echo -e "By: @SoHeilDkta"
-	echo -e "Channel: @PartTeam"
+	echo -e "By: @nimaftf"
+	echo -e "Channel: @iranxfun"
 	echo -e "\n\e[36m"
 }
 

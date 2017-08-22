@@ -12,9 +12,9 @@ import redis
 import requests as req
 reload(sys)
 sys.setdefaultencoding("utf-8")
-TOKEN = 'Token'
-channel = '@PartTeam'
-sudo = 'Your ID'
+TOKEN = '146177077:AAGSh6ZBkhEpaQDI_zKYFnooolahSg59fpQ'
+channel = '@dar_masir_harzegi'
+sudo = '119953172'
 bot = telebot.TeleBot(TOKEN)
 redis = redis.StrictRedis(host='localhost', port=6379, db=0)
 db = "https://api.telegram.org/bot{}/getMe?".format(TOKEN)
@@ -37,7 +37,7 @@ def start(m):
     bot.send_message(m.chat.id, "به ربات لوگو استیکر خوش امدید\nکار کردن با این بات خیلی راحته فقط کافیه متنت وارد کنی تا  لوگو مورد نظرت انتخاب کنی", disable_notification=True, reply_markup=markup, parse_mode='Markdown')
   else:
     markup = types.InlineKeyboardMarkup()
-    ch = types.InlineKeyboardButton('عضومیشوم',url='https://t.me/joinchat/AAAAAD_IKpOct-g1DUVTrg')
+    ch = types.InlineKeyboardButton('عضومیشوم',url='https://t.me/joinchat/AAAAAEHdKsQ8JZTUke0umw')
     markup.add(ch)
     bot.send_message(m.chat.id,'سلام\nبرای استفاده از قابلیت های ربات و مطلع شدن ازاپدیت ها و...\n باید در کانال عضوشودیدو مجدد /start را بزنید',reply_markup=markup)
  except IndexError:
@@ -695,7 +695,7 @@ def callback(call):
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = "لطفا طرح خود را انتخاب کنید:", reply_markup=markup, parse_mode='Markdown')
   if call.message: 
      if call.data == "about":
-        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = "سازنده:\n[SoHeilDkta](https://t.me/soheildkta)\nباتشکر از:\n[Api Monsters](https://t.me/api_monsters)\n[PartTeam](https://t.me/partteam)\n[NortTeam](https://t.me/nortteam)", parse_mode='Markdown')
+        bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text = "سازنده:\n[nimaftf](https://t.me/nimaftf)\nباتشکر از:\n[iranxfun](https://t.me/iranxfun)\n[iranxapp](https://t.me/iranxapp)\n[iranxmusic](https://t.me/iranxmusic)", parse_mode='Markdown')
   if call.message: 
      if call.data == "amar":
        markup = types.InlineKeyboardMarkup()

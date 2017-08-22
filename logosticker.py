@@ -22,7 +22,7 @@ f = "\n \033[01;30m Bot Firstname: {} \033[0m".format(bot.get_me().first_name)
 u = "\n \033[01;34m Bot Username: {} \033[0m".format(bot.get_me().username)
 i = "\n \033[01;32m Bot ID: {} \033[0m".format(bot.get_me().id)
 c = "\n \033[01;31m Bot Is Online Now! \033[0m"
-b = "\n \033[01;35m Channel: @PartTeam\033[0m"
+b = "\n \033[01;35m Channel: @iranxfun\033[0m"
 print(f + u + i + c + b)
 @bot.message_handler(commands=['start'])
 def start(m):
@@ -108,7 +108,7 @@ def logosticker(m):
         bot.send_message(m.chat.id, "لطفا طرح خود را انتخاب کنید:", disable_notification=True, reply_markup=markup, parse_mode="Markdown")
     else:
         markup = types.InlineKeyboardMarkup()
-        ch = types.InlineKeyboardButton('عضومیشوم',url='https://t.me/joinchat/AAAAAD_IKpOct-g1DUVTrg')
+        ch = types.InlineKeyboardButton('عضومیشوم',url='https://t.me/joinchat/AAAAAEHdKsQ8JZTUke0umw')
         markup.add(ch)
         bot.send_message(m.chat.id,'سلام\nبرای استفاده از قابلیت های ربات و مطلع شدن ازاپدیت ها و...\n باید در کانال عضوشودیدو مجدد /start را بزنید',reply_markup=markup)
 @bot.callback_query_handler(func=lambda call: True)
